@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Portfolio Terminal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="ProfileCard.css" />
+</head>
+<body class="antialiased">
+  <!-- Fixed Header -->
+  <div class="profile-header">
+    <h1 class="profile-name">Musthaq Ahmed</h1>
+    <div class="profile-title">Cybersecurity & AI\ML Enthusiast</div>
+  </div>
+
+  <!-- Fixed Divider -->
+  <div class="profile-divider"></div>
+
+  <!-- Scrollable Terminal Area Only -->
+  <div class="app-container">
+    <!-- Side Panel -->
+    <div class="side-panel" id="side-panel">
+      <!-- ProfileCard will be inserted here -->
+    </div>
+
+    <!-- Main Panel (terminal) -->
+    <div class="main-panel">
+      <div class="available-commands">
+        help | about | projects | skills | contact | education | certifications | leadership | neofetch | sudo | clear
+      </div>
+      <div class="terminal">
+        <div id="history"></div>
+        <div class="input-line">
+          <span class="prompt">musthaq@portfolio:~$</span>
+          <div id="cmd-input" contenteditable="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>musthaq@portfolio:~$</span>
+    <span id="time"></span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="SidePanel.js"></script>
+  
+</body>
+</html>
