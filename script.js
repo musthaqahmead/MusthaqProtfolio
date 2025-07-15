@@ -133,7 +133,7 @@ function handleUnknownCommand(wrongCmd) {
 
   appendOutput(`bash: ${wrongCmd}: command not found`, 'output-error');
   
-  if (bestMatch && minDistance <= 3) {
+  if (bestMatch && minDistance <= 5) {
     isTyping = true;
     input.contentEditable = false;
     setTimeout(() => {
